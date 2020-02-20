@@ -1,0 +1,40 @@
+.menu .list nav a:nth-child(1){
+	border-bottom: 2px solid #d84315;
+}
+@media screen and (max-width:767px){
+	.menu .list nav a:nth-child(1){
+	border-bottom:none;
+  }
+}
+.news{
+	background-color: rgba(255, 255,255, .7);
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+.news .title{
+	padding-top: 120px;
+	padding-bottom: 30px;
+	color: #333;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.news .info{
+	width: 100%;
+	max-width: 1000px;
+	padding-bottom: 30%;
+	margin: auto;
+	/* outline: 1px solid #f00; */
+	margin-bottom: 20px;
+	border-bottom: 2px solid rgba(204, 204, 204, .5);
+}
+
+.news .info img{
+	width: 90%;
+	padding:0 10px;
+	border-radius: 50%;
+
+}

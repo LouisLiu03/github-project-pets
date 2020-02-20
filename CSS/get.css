@@ -1,0 +1,318 @@
+.menu .list nav a:nth-child(1){
+	border-bottom: 2px solid #d84315;
+}
+
+@media screen and (max-width:767px){
+	.menu .list nav a:nth-child(5),
+	.menu .list nav a:nth-child(4),
+	.menu .list nav a:nth-child(3),
+	.menu .list nav a:nth-child(2),
+	.menu .list nav a:nth-child(1){
+		border-bottom:none;
+	}
+	.lb-overlay img{
+	/* height: 100%; For Opera max-height does not seem to work */
+	max-height: 50%;
+	position: relative;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+	}
+	.lb-overlay:target { /* 點擊後lbox 出現 */
+		width: 100%;
+		max-width: 	200px;
+		max-height: 200px;
+		bottom: 0px;
+		right: 0px;
+		margin: auto;
+		/* padding: 80px 100px 120px 100px; */
+	}
+	.lb-overlay:target img {
+		animation: fadeInScale .5s ease-in-out;
+		border-radius: 5px;
+	}
+	.lb-overlay:target a.lb-close,
+	.lb-overlay:target > div{
+		opacity: 1;
+	}
+	li > div{
+		margin: -100%;
+	}
+	
+	.lb-album li > a span{
+		top: 0;left: 0;
+	}
+
+}
+
+.news{
+	/* background-color: rgba(255, 255, 248,.6); */
+	width: 100%;
+	max-width: 1000px;
+	/*padding-bottom: 15%;*/
+	margin: auto;
+	/*outline: 1px solid #f00;*/
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.news .title{
+	padding-top: 120px;
+	padding-bottom: 30px;
+	color: #333;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+@media screen and (max-width:767px){
+	.news .info{
+	
+	}
+}
+.news .info{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+
+}
+.news .info .icon{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+	/* outline: 1px solid #f00; */
+	display: table;
+	text-align: center;
+}
+
+.news .info .item img{
+	margin: auto;
+	padding:5px;
+	width: 80%;
+	border-radius: 50%;
+	
+	
+}
+.news .info .item h3{
+	color:#777;
+}
+.news .info .list .hh2{
+	width: 100%;
+	max-width: 150px;
+	text-align: center;
+	margin: 20px auto;
+	padding: 20px;
+}
+.news .info .list .hh2 h2{
+	color: #f10;
+	font-size: 30px;
+	
+}
+#pic1{
+	background-color: rgba(170, 221, 170, .7);
+	border: 3px solid #ada;
+	transition: .5s;
+
+}
+#pic2{
+	background-color: rgba(170, 221, 221, .7);
+	border: 3px solid #add;
+	transition: .5s;
+}
+#pic3{
+	background-color: rgba(249, 163, 131, .7);
+	border: 3px solid #e8a58d;
+	transition: .5s;
+}
+#pic4{
+	background-color: rgba(100, 163, 131, .7);
+	border: 3px solid #aaa58d;
+	transition: .5s;
+}
+.news .info .item img:hover{
+	background-color: rgba(204, 204, 204, .4);
+	transition: .7s;
+	cursor: pointer;
+	transform: /* rotate(360deg) */ scale(1.1,1.1) ;
+}
+
+
+.news .list {
+	width: 100%;
+	margin: auto;
+
+}
+.lb-album{
+	/* width: 100%; */
+	max-width: 1000px;
+	margin:  auto;
+	padding: 30px;
+	text-align: center;
+}
+.lb-album ul{
+	width: 100%;
+	max-width: 1000px;
+}
+.lb-album li{
+	float: left;
+	margin: auto;
+	position: relative;
+	/* padding: 10px; */
+	width: 25%;
+	height: 25%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.lb-album li > a,
+.lb-album li > a img{
+	display: block;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	vertical-align: top;
+}
+.lb-album li > a{
+	max-width: 200px;
+	max-height: 200px;
+	position: relative;
+	padding: 10px;
+	/* margin-bottom: 10px; */
+	background: #f1d2c2;
+	box-shadow: 2px 2px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;	
+	border-radius: 4px 4px 4px 4px;
+}
+.lb-album li > a span{
+	position: absolute;
+	width: 100%;
+	width: 200px;
+	height: 200px;
+	top: 10px;
+	left: 10px;
+	text-align: center;
+	line-height: 200px;
+	color: rgba(27,54,81,0.8);
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+	font-size: 24px;
+	opacity: 0;
+	/* filter: alpha(opacity=0); /* internet explorer */ */
+	background: rgb(241,210,194);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	transition: opacity 0.3s linear;
+}
+.list .lb-album li > a:hover span{
+	opacity: 1;
+}
+.list .lb-overlay{
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	/* overflow: hidden; */
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	z-index: 99;
+	text-align: center;
+	background: rgb(241,210,194);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+}
+.list .lb-overlay > div{
+	position: relative;
+	color: rgba(27,54,81,.9);
+	opacity: 0;
+	max-width: 550px;
+	font-size: 20px;
+	margin: 10px auto 0px auto;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+	width: 100%;
+}
+.lb-overlay div h3,
+.lb-overlay div p{
+	padding: 0px 20px;
+	width: 100%;
+	max-width: 200px;
+	max-height: 60px;
+}
+.lb-overlay div h3{
+	font-size: 36px;
+	/* float: left; */
+	text-align: center;
+	margin: auto;
+	/* border-right: 1px solid rgba(27,54,81,0.4); */
+}
+.lb-overlay div h3 span,
+.lb-overlay div p{
+	font-size: 16px;
+	float: left;
+	}
+.lb-overlay div h3 span{
+	display: block;
+	padding: 5px;
+	line-height: 10px;
+	/*margin: 15px;*/
+}
+.lb-overlay div p{
+	display: block;
+	text-align: center;
+	margin: 15px auto;
+	max-width: 260px;
+	width: 100%;
+}
+.lb-overlay a.lb-close{
+	background: rgba(27,54,81,0.8);
+	z-index: 800;
+	color: #fff;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: center;
+	max-width: 90px;
+	max-height: 30px;
+	width: 100%;
+	overflow: hidden;
+	/* margin-left: -25px; */
+	opacity: 0;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	transition: opacity 0 linear 0.4s;
+}
+.lb-overlay a.lb-close:hover{
+	background-color: #d84315;
+	
+}
+.lb-overlay img{
+	/* height: 100%; For Opera max-height does not seem to work */
+	max-height: 50%;
+	position: relative;
+	box-shadow:0px 0px 2px 7px rgba(0,0,0,0.2);
+}
+.lb-overlay:target { /* 點擊後lbox 出現 */
+	width: 	50%;
+	height: 50%;
+	bottom: 0px;
+	right: 0px;
+	margin: 10px auto;
+	padding: 50px 40px 220px ;
+}
+.lb-overlay:target img {
+	animation: fadeInScale .5s ease-in-out;
+	border-radius: 5px;
+}
+.lb-overlay:target a.lb-close,
+.lb-overlay:target > div{
+	opacity: 1;
+}
+li > div{
+	margin: -100%;
+}
+/* .lb-overlay:target .lb-overlay{
+	opacity: 0;
+} */
+@keyframes fadeInScale {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* 
+	100% Height for Opera as the max-height seems to be ignored, not optimal for large screens 
+	http://bricss.net/post/11230266445/css-hack-to-target-opera 
+*/

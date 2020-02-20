@@ -1,0 +1,218 @@
+
+body{
+	
+	font-family:'Microsoft JhengHei', 'Microsoft JhengHei UI', 'Microsoft YaHei', 'Microsoft YaHei UI', 'Apple LiGothic','Heiti TC','LiHei Pro', Arial, 'PMingLiU', sans-serif;
+}
+.bg{
+	background: url('../images/Pic/bgimgs.png') center /100%;	
+	
+	width: 100%;
+	/* max-width: 1000px; */
+	margin: auto;
+	background-image:;
+}
+.container{
+	/* background-color: #fff; */
+	z-index: 1;
+}
+.headerbg{
+	width: 100%;
+	padding-bottom:80px;
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, .9);
+	/* outline: 1px solid #f00; */
+	margin-top: -21px;
+
+	
+}
+.menu{
+	width: 100%;
+	 max-width: 1000px; 
+	margin: auto;
+	position: fixed;
+	z-index: 1;
+	top: 0;left: 0;right: 0;
+	background-color: rgba(255, 255, 255, .1);
+
+}
+.menu .logo{
+	display: inline-block;
+	/* padding-left: 50px; */
+}
+.menu .list{
+	display: inline-block;
+	float: right;
+}
+.menu .list nav{
+	margin-top: 40px;
+}
+.menu .list nav a{
+	color:#666;
+	padding:10px 0px;
+	margin: 0 30px;	
+	font-weight: bold;
+}
+.menu .list nav a:hover{
+	color: #d84315;
+	transition: .3s;
+}
+.header input{opacity: 0;}
+.menu .logo img{transition: .3s;}
+.menu .logo img:hover{
+	transform:scale(1.1,1.1);
+	transition: .3s;
+}
+		/*手*/
+@media screen and (max-width:767px){
+	.headerbg .toggle-btn{
+		/* display: block; */
+		width: 40px;
+		height: 40px;
+		/*background-color: rgba(0,0,0,.4);*/
+		position: absolute;
+	    right: 20px;
+		top: 20px;
+		/*border-radius: 30%;*/
+	}
+	.headerbg .toggle-btn span{
+	/* display: block; */
+		width: 32px;
+		height: 5px;
+		background-color: #777;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		opacity: 1;
+		transition: .5s;
+		border-radius: 10px;
+	}
+	.headerbg .toggle-btn .bar1{ transform: translateY(-10px) rotateZ(0deg);}
+	.headerbg .toggle-btn .bar3{ transform: translateY(10px) rotateZ(0deg);}
+	.headerbg .menu .logo {
+		width: 100%;
+		text-align: center;
+	}
+	.headerbg .menu nav{
+		width: 65%;
+		height: 60vh;
+		position: fixed;
+		right: 0%;
+		top: -100%;
+		background-color: rgba(240, 240, 200, .9);
+		transition: .5s;
+		z-index: 1;
+	}
+	.headerbg .menu nav a{
+		display: block;
+		padding: 10px 20px;
+		color: #666;
+		text-align: center;
+		font-size: 30px;
+	}
+	.headerbg .menu nav a + a{
+		border-top: 1px solid #eee;
+	}
+	#mm:checked + .headerbg .menu nav{
+		right: 0;
+		top: 40px;
+	}
+	#mm:checked + .headerbg .menu .toggle-btn .bar1{transform: translateY(0px) rotateZ(495deg);}
+	#mm:checked + .headerbg .menu .toggle-btn .bar2{ opacity:0; }
+	#mm:checked + .headerbg .menu .toggle-btn .bar3{transform: translateY(0px) rotateZ(585deg);}
+	}
+
+/* =========================================================================== */
+
+.banner{
+	margin-top: 60px;
+	/* outline: 1px solid #f00; */
+}
+
+
+.banner .photo{
+	width: 100%;
+	position: relative;
+	
+	margin-top: 0px;
+
+}
+.banner .photo img{
+	width: 100%;
+}
+.banner .photo .txt{
+	width: 100%;
+	max-width: ;
+	margin: auto;
+	position: absolute;
+	top: 75%;left: 50%;
+	text-align: center;
+	color: #eee;
+	 transform: translate(-50%, -50%);
+}
+@media screen and (max-width:767px){
+	.banner .photo{
+	height: 27vh;
+	}
+}
+
+
+/* =========================================================================== */
+
+.footer{
+	width: 100%;
+	background: url(footerbg.png);
+}
+.footer .item{
+	width: 100%;
+	/* max-width: 1000px; */
+	margin:  auto ;
+	color:#eee;
+	text-align: center;
+	padding: 20px 0 0 0;
+}
+.item .logo{
+	/* padding: 50px 0 20px; */
+	display: inline-block;
+	padding: 20px;
+	/* outline: 1px solid #f00; */
+
+}
+.item .add{
+	display: inline-block;
+	
+	/* outline: 1px solid #f00; */
+}
+.item .add ul{
+	margin: auto;
+	text-align: center;
+}
+.item .add li{
+	/* margin: 20px; */
+	font-size: 18px;
+	/* max-width: 300px; */
+	text-align: center;
+	padding: 5px;
+	/* outline: 1px solid #f00; */
+}
+.item .icon{
+
+	margin: 10px;
+	padding: 10px 0;
+}
+.item .icon a{
+	margin:20px ;
+}
+.item .icon img{
+	
+	transition:.3s;
+}
+.item .icon img:hover{
+	transform: translateY(-4px);
+	transition:.3s;
+}
+
+

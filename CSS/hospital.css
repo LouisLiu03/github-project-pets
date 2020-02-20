@@ -1,0 +1,139 @@
+.menu .list nav a:nth-child(3){
+	border-bottom: 2px solid #d84315;
+}
+@media screen and (max-width:767px){
+	.menu .list nav a:nth-child(5),
+	.menu .list nav a:nth-child(4),
+	.menu .list nav a:nth-child(3),
+	.menu .list nav a:nth-child(2),
+	.menu .list nav a:nth-child(1){
+		border-bottom:none;
+	}
+}
+.news{
+	background-color: rgba(255, 255, 248,.6);
+	width: 100%;
+	max-width: 1000px;
+	padding-bottom: 15%;
+	margin: auto;
+	/*outline: 1px solid #f00;*/
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.news .title{
+	padding-top: 120px;
+	padding-bottom: 30px;
+	color: #333;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+@media screen and (max-width:767px){
+	.news .info{
+	
+	}
+}
+.news .info{
+	width: 100%;
+	max-width: 1000px;
+	padding-bottom: 100%;
+	margin: auto;
+	/* outline: 1px solid #f00; */
+	/* margin-bottom: 20px; */
+	/* border-bottom: 2px solid rgba(204, 204, 204, .5); */
+}
+.news .info .icon{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+	/* outline: 1px solid #f00; */
+	display: table;
+	text-align: center;
+	/* background-color: rgba(170, 221, 170, .8); */
+	/* outline: 1px solid #f00; */
+	/* border: 1px solid #ccc; */
+}
+
+.news .info img{
+	margin: auto;
+	padding:5px;
+	width: 60%;
+	/* width: 200px; */
+	/* height: 200px; */
+	border-radius: 50%;
+	/* box-shadow: 0px 0px 10px 2px; */
+	/* border: 1px solid #ccc; */
+	
+}
+#pic1{
+	background-color: rgba(170, 221, 170, .7);
+	border: 3px solid #ada;
+	transition: .5s;
+
+}
+#pic2{
+	background-color: rgba(170, 221, 221, .7);
+	border: 3px solid #add;
+	transition: .5s;
+}
+#pic3{
+	background-color: rgba(249, 163, 131, .7);
+	border: 3px solid #e8a58d;
+	transition: .5s;
+}
+.news .info img:hover{
+	background-color: rgba(204, 204, 204, .4);
+	transition: .7s;
+	cursor: pointer;
+	
+	transform: rotate(360deg) scale(1.2,1.2) ;
+}
+.news .info .icon .txt{
+	width: 90%;
+	padding: 10px;
+	margin: auto;
+	/* outline: 1px solid #f00; */
+
+}
+.news .info .icon .txt h3{
+	padding: 10px;
+	font-size: 25px;
+	font: bold;
+	color: #d84315;
+}
+
+
+.show{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding:0px 50px;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 248,.6);
+	border-top:0px solid #f00; 
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	
+}
+.show h4{
+	font-size: 20px;
+	color: #008;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.show h3{
+	text-align: center;
+	font-size: 25px;
+	color: #800;
+	margin: 15px;
+	padding: 10px;
+}
+.show span{
+	color:#aa0;
+	font-size: 20px;
+	font:bold;
+	line-height: 1.5em;}
+.show p{
+	line-height: 2em;
+	
+}
